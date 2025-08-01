@@ -1,0 +1,38 @@
+.image__with__text_dpl_flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 'left right';
+}
+.media_left .image__with_text_media{
+    grid-area: left;
+}
+.media_right .image__with_text_media{
+    grid-area: right;
+}
+h2.image__with__text__heading {
+    font-size: 25px;
+    font-family: cursive;
+    margin: 0;
+    line-height: normal;
+}
+.image__with__text__text {
+    font-family: cursive;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem 2rem 1rem 3rem;
+}
+a.image__with__text__button {
+    text-decoration: none;
+    color: white;
+    background: black;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.image__with_text_media img {
+    height: 100%;
+    object-fit: cover;
+}
